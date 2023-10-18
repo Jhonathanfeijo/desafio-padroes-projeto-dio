@@ -17,7 +17,7 @@ import org.springframework.web.util.UriComponentsBuilder;
 
 import jakarta.transaction.Transactional;
 import jakarta.validation.Valid;
-import me.dio.domain.cliente.Cliente;
+import me.dio.domain.model.Cliente;
 import me.dio.service.ClienteService;
 
 @RestController

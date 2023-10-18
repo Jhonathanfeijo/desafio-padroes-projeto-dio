@@ -1,4 +1,4 @@
-package me.dio.domain.endereco;
+package me.dio.domain.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;

@@ -5,10 +5,10 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import me.dio.domain.cliente.Cliente;
-import me.dio.domain.cliente.ClienteRepository;
-import me.dio.domain.endereco.Endereco;
-import me.dio.domain.endereco.EnderecoRepository;
+import me.dio.domain.model.Cliente;
+import me.dio.domain.model.Endereco;
+import me.dio.domain.repository.ClienteRepository;
+import me.dio.domain.repository.EnderecoRepository;
 import me.dio.exception.ClienteNotFoundException;
 
 @Service

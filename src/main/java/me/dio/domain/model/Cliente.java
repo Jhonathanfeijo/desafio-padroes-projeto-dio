@@ -1,4 +1,4 @@
-package me.dio.domain.cliente;
+package me.dio.domain.model;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -7,7 +7,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.ManyToOne;
 import jakarta.persistence.Table;
 import jakarta.validation.constraints.NotBlank;
-import me.dio.domain.endereco.Endereco;
 
 @Entity(name = "cliente")
 @Table(name = "Cliente")
