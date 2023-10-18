@@ -30,7 +30,6 @@ public class ClienteController {
 	@PostMapping
 	@Transactional
 	public ResponseEntity<Cliente> inserirCliente(@RequestBody @Valid Cliente cliente, UriComponentsBuilder builder) {
-		System.out.println(cliente.getEndereco().getCep());
 		cliente = clienteService.inserirCliente(cliente);
 		URI uri = builder.path("/{id}").buildAndExpand(cliente.getId()).toUri();
 		return ResponseEntity.created(uri).body(cliente);

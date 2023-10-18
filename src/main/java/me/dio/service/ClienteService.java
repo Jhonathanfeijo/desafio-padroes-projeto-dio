@@ -53,7 +53,6 @@ public class ClienteService {
 		String cep = cliente.getEndereco().getCep();
 		Endereco endereco = enderecoRepository.findById(cep).orElseGet(() -> {
 			Endereco enderecoNovo = viaCepService.consultarCep(cep);
-			System.out.println(enderecoNovo.getUf());
 			enderecoNovo = enderecoRepository.save(enderecoNovo);
 			return enderecoNovo;
 		});
