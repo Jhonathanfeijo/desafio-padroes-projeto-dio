@@ -33,7 +33,7 @@ public class ClienteController {
 		System.out.println(cliente.getEndereco().getCep());
 		cliente = clienteService.inserirCliente(cliente);
 		URI uri = builder.path("/{id}").buildAndExpand(cliente.getId()).toUri();
-		return ResponseEntity.created(uri).build();
+		return ResponseEntity.created(uri).body(cliente);
 	}
 
 	@PutMapping("/{id}")
